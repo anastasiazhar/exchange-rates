@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exchange rate</title>
+    <link rel="stylesheet" th:href="@{style.css}">
+</head>
+<body>
+  <h3>currency code:</h3>
+  <form method="POST" action="http://localhost:8080/exchange-rates" modelAttribute="currency">
+      <input name="code" type="text" id="currency-code"/>
+      <br/>
+      <input type="submit" value="submit" />
+  </form>
+</body>
+</html>
