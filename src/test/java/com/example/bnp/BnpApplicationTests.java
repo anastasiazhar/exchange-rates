@@ -15,6 +15,6 @@ class BnpApplicationTests {
 
 	@Test
 	void checkExchangeRate() {
-		assertNotNull("...", exchangeRate.getResult("USD"));
+		assertNotNull("exchange rate not returned", exchangeRate.getResult("USD"));
 	}
 }
